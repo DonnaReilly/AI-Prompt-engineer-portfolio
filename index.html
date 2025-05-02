@@ -12,11 +12,24 @@
       margin: 2rem auto;
       padding: 0 1rem;
       color: #f0f0f0;
-      background: url('AI engineer.jpg') no-repeat center center fixed;
+      background: linear-gradient(135deg, #5e2ca5, #9b59b6);
+      background-attachment: fixed;
       background-size: cover;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
     }
     h1, h2, h3 {
       color: #f9f871;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
     code {
       background-color: rgba(255, 255, 255, 0.1);
@@ -32,6 +45,7 @@
       background-color: rgba(0, 0, 0, 0.6);
       padding: 1rem;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     a {
       color: #00d8ff;
@@ -43,9 +57,27 @@
     ul li::marker {
       color: #f9f871;
     }
+    .header-img {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
   </style>
 </head>
 <body>
+  <img src="AI%20engineer.jpg" alt="AI Robot" class="header-img">
   <h1>Donna Reilly – AI Prompt Engineer Portfolio</h1>
 
   <section>
