@@ -7,21 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, #5e2ca5, #9b59b6);
+      background: url('AI%20engineer.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
+      backdrop-filter: brightness(0.6);
     }
-    .header-img {
-      width: 100%;
-      max-width: 400px;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      animation: float 5s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .overlay {
+      background-color: rgba(0,0,0,0.6);
+      padding: 3rem 1rem;
     }
     .section-card {
       background: rgba(0,0,0,0.6);
@@ -48,86 +41,87 @@
   </style>
 </head>
 <body>
-  <div class="container py-5">
-    <img src="AI%20engineer.jpg" alt="AI Robot" class="header-img">
-    <h1 class="text-center mb-4">Donna Reilly – AI Prompt Engineer Portfolio</h1>
+  <div class="overlay">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Donna Reilly – AI Prompt Engineer Portfolio</h1>
 
-    <div class="section-card">
-      <h2 class="section-title">About Me</h2>
-      <p>I am a prompt engineer specializing in crafting high-quality prompts for Large Language Models (LLMs) like GPT-4, Claude, and Gemini. I design structured, iterative prompts that optimize output quality for chatbots, writing, automation, and more.</p>
-    </div>
+      <div class="section-card">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a prompt engineer specializing in crafting high-quality prompts for Large Language Models (LLMs) like GPT-4, Claude, and Gemini. I design structured, iterative prompts that optimize output quality for chatbots, writing, automation, and more.</p>
+      </div>
 
-    <div class="section-card">
-      <h2 class="section-title">Skills & Tools</h2>
-      <ul>
-        <li><strong>Prompt Design:</strong> Zero-shot, few-shot, chain-of-thought, role-based</li>
-        <li><strong>LLMs:</strong> OpenAI GPT-4, Claude 3, Gemini, LLaMA</li>
-        <li><strong>Tools:</strong> ChatGPT, Midjourney, DALL·E, Notion AI, LangChain</li>
-        <li><strong>Languages:</strong> Python, Markdown, YAML</li>
-        <li><strong>Applications:</strong> Chatbots, content generation, education, code gen</li>
-      </ul>
-    </div>
+      <div class="section-card">
+        <h2 class="section-title">Skills & Tools</h2>
+        <ul>
+          <li><strong>Prompt Design:</strong> Zero-shot, few-shot, chain-of-thought, role-based</li>
+          <li><strong>LLMs:</strong> OpenAI GPT-4, Claude 3, Gemini, LLaMA</li>
+          <li><strong>Tools:</strong> ChatGPT, Midjourney, DALL·E, Notion AI, LangChain</li>
+          <li><strong>Languages:</strong> Python, Markdown, YAML</li>
+          <li><strong>Applications:</strong> Chatbots, content generation, education, code gen</li>
+        </ul>
+      </div>
 
-    <div class="section-card">
-      <h2 class="section-title">Projects</h2>
-      <h5>1. AI Tutor Chatbot</h5>
-      <p><strong>Goal:</strong> Help high school students prep for biology exams.<br>
-      <strong>Tools:</strong> GPT-4 + custom templates.<br>
-      <strong>Strategy:</strong> Few-shot QA, Socratic prompts.<br>
-      <strong>Impact:</strong> Boosted student performance in testing.</p>
+      <div class="section-card">
+        <h2 class="section-title">Projects</h2>
+        <h5>1. AI Tutor Chatbot</h5>
+        <p><strong>Goal:</strong> Help high school students prep for biology exams.<br>
+        <strong>Tools:</strong> GPT-4 + custom templates.<br>
+        <strong>Strategy:</strong> Few-shot QA, Socratic prompts.<br>
+        <strong>Impact:</strong> Boosted student performance in testing.</p>
 
-      <h5>2. AI-Powered Story Generator</h5>
-      <p><strong>Goal:</strong> Create engaging bedtime stories for ages 4–7.<br>
-      <strong>Tools:</strong> GPT-4 + DALL·E.<br>
-      <strong>Strategy:</strong> Character + moral modules.<br>
-      <strong>Outcome:</strong> 100+ stories published.</p>
+        <h5>2. AI-Powered Story Generator</h5>
+        <p><strong>Goal:</strong> Create engaging bedtime stories for ages 4–7.<br>
+        <strong>Tools:</strong> GPT-4 + DALL·E.<br>
+        <strong>Strategy:</strong> Character + moral modules.<br>
+        <strong>Outcome:</strong> 100+ stories published.</p>
 
-      <h5>3. Resume Analyzer & Rewriter</h5>
-      <p><strong>Goal:</strong> Improve job-seeking resumes.<br>
-      <strong>Tools:</strong> GPT-4, ResumeParser API.<br>
-      <strong>Strategy:</strong> Role-context prompts.<br>
-      <strong>Result:</strong> Increased interview callbacks.</p>
+        <h5>3. Resume Analyzer & Rewriter</h5>
+        <p><strong>Goal:</strong> Improve job-seeking resumes.<br>
+        <strong>Tools:</strong> GPT-4, ResumeParser API.<br>
+        <strong>Strategy:</strong> Role-context prompts.<br>
+        <strong>Result:</strong> Increased interview callbacks.</p>
 
-      <h5>4. Chain-of-Thought Problem Solver</h5>
-      <p><strong>Goal:</strong> Help users solve multi-step problems.<br>
-      <strong>Tools:</strong> Claude 3.<br>
-      <strong>Strategy:</strong> Step-by-step breakdown.<br>
-      <strong>Result:</strong> Improved logical comprehension.</p>
-    </div>
+        <h5>4. Chain-of-Thought Problem Solver</h5>
+        <p><strong>Goal:</strong> Help users solve multi-step problems.<br>
+        <strong>Tools:</strong> Claude 3.<br>
+        <strong>Strategy:</strong> Step-by-step breakdown.<br>
+        <strong>Result:</strong> Improved logical comprehension.</p>
+      </div>
 
-    <div class="section-card">
-      <h2 class="section-title">Prompt Samples</h2>
-      <code>
+      <div class="section-card">
+        <h2 class="section-title">Prompt Samples</h2>
+        <code>
 **Goal:** Rewrite a user’s paragraph to sound more confident and professional.
 
 **Prompt:**
 You are a professional writing coach. Rewrite the following paragraph to sound more confident and assertive, without exaggerating:
 
 "{user_input}"
-      </code>
+        </code>
 
-      <code>
+        <code>
 **Goal:** Generate a visually appealing summary of a news article.
 
 **Prompt:**
 Summarize the following article in 3 concise bullet points. Then generate a title and a related DALL·E image prompt:
 
 {article_text}
-      </code>
-    </div>
+        </code>
+      </div>
 
-    <div class="section-card">
-      <h2 class="section-title">Certifications</h2>
-      <ul>
-        <li>Prompt Engineering for ChatGPT – DeepLearning.AI</li>
-        <li>AI for Everyone – Andrew Ng</li>
-        <li>LangChain Bootcamp – Build LLM Apps with Python</li>
-      </ul>
-    </div>
+      <div class="section-card">
+        <h2 class="section-title">Certifications</h2>
+        <ul>
+          <li>Prompt Engineering for ChatGPT – DeepLearning.AI</li>
+          <li>AI for Everyone – Andrew Ng</li>
+          <li>LangChain Bootcamp – Build LLM Apps with Python</li>
+        </ul>
+      </div>
 
-    <div class="section-card">
-      <h2 class="section-title">Contact</h2>
-      <p>Let’s collaborate! Reach out via <a href="mailto:youremail@example.com">youremail@example.com</a> or connect on <a href="https://github.com/yourhandle">GitHub</a> and <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>.</p>
+      <div class="section-card">
+        <h2 class="section-title">Contact</h2>
+        <p>Let’s collaborate! Reach out via <a href="mailto:youremail@example.com">youremail@example.com</a> or connect on <a href="https://github.com/yourhandle">GitHub</a> and <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>.</p>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
