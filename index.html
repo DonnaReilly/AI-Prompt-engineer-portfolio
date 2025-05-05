@@ -37,6 +37,23 @@
     a {
       color: #00d8ff;
     }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .project-text {
+      flex: 1 1 60%;
+    }
+    .project-img {
+      flex: 1 1 35%;
+      padding-left: 1rem;
+    }
+    .project-img img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -62,29 +79,59 @@
 
       <div class="section-card">
         <h2 class="section-title">Projects</h2>
-        <h5>1. AI Tutor Chatbot</h5>
-        <p><strong>Goal:</strong> Help high school students prep for biology exams.<br>
-        <strong>Tools:</strong> GPT-4 + custom templates.<br>
-        <strong>Strategy:</strong> Few-shot QA, Socratic prompts.<br>
-        <strong>Impact:</strong> Boosted student performance in testing.</p>
 
-        <h5>2. AI-Powered Story Generator</h5>
-        <p><strong>Goal:</strong> Create engaging bedtime stories for ages 4–7.<br>
-        <strong>Tools:</strong> GPT-4 + DALL·E.<br>
-        <strong>Strategy:</strong> Character + moral modules.<br>
-        <strong>Outcome:</strong> 100+ stories published.</p>
+        <div class="project">
+          <div class="project-text">
+            <h5>1. AI Tutor Chatbot</h5>
+            <p><strong>Goal:</strong> Help high school students prep for biology exams.<br>
+            <strong>Tools:</strong> GPT-4 + custom templates.<br>
+            <strong>Strategy:</strong> Few-shot QA, Socratic prompts.<br>
+            <strong>Impact:</strong> Boosted student performance in testing.</p>
+          </div>
+          <div class="project-img">
+            <img src="https://img.freepik.com/free-vector/robot-teacher-concept-illustration_114360-8962.jpg" alt="AI Tutor Chatbot">
+          </div>
+        </div>
 
-        <h5>3. Resume Analyzer & Rewriter</h5>
-        <p><strong>Goal:</strong> Improve job-seeking resumes.<br>
-        <strong>Tools:</strong> GPT-4, ResumeParser API.<br>
-        <strong>Strategy:</strong> Role-context prompts.<br>
-        <strong>Result:</strong> Increased interview callbacks.</p>
+        <div class="project">
+          <div class="project-text">
+            <h5>2. AI-Powered Story Generator</h5>
+            <p><strong>Goal:</strong> Create engaging bedtime stories for ages 4–7.<br>
+            <strong>Tools:</strong> GPT-4 + DALL·E.<br>
+            <strong>Strategy:</strong> Character + moral modules.<br>
+            <strong>Outcome:</strong> 100+ stories published.</p>
+          </div>
+          <div class="project-img">
+            <img src="https://img.freepik.com/free-vector/fairy-tale-concept-illustration_114360-12353.jpg" alt="AI Story Generator">
+          </div>
+        </div>
 
-        <h5>4. Chain-of-Thought Problem Solver</h5>
-        <p><strong>Goal:</strong> Help users solve multi-step problems.<br>
-        <strong>Tools:</strong> Claude 3.<br>
-        <strong>Strategy:</strong> Step-by-step breakdown.<br>
-        <strong>Result:</strong> Improved logical comprehension.</p>
+        <div class="project">
+          <div class="project-text">
+            <h5>3. Resume Analyzer & Rewriter</h5>
+            <p><strong>Goal:</strong> Improve job-seeking resumes.<br>
+            <strong>Tools:</strong> GPT-4, ResumeParser API.<br>
+            <strong>Strategy:</strong> Role-context prompts.<br>
+            <strong>Result:</strong> Increased interview callbacks.</p>
+          </div>
+          <div class="project-img">
+            <img src="https://img.freepik.com/free-vector/resume-concept-illustration_114360-4305.jpg" alt="Resume Analyzer">
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h5>4. Chain-of-Thought Problem Solver</h5>
+            <p><strong>Goal:</strong> Help users solve multi-step problems.<br>
+            <strong>Tools:</strong> Claude 3.<br>
+            <strong>Strategy:</strong> Step-by-step breakdown.<br>
+            <strong>Result:</strong> Improved logical comprehension.</p>
+          </div>
+          <div class="project-img">
+            <img src="https://img.freepik.com/free-vector/problem-solving-concept-illustration_114360-8095.jpg" alt="Chain-of-Thought Solver">
+          </div>
+        </div>
+
       </div>
 
       <div class="section-card">
@@ -112,13 +159,14 @@ Summarize the following article in 3 concise bullet points. Then generate a titl
         <h2 class="section-title">Certifications</h2>
         <ul>
           <li>Prompt Engineering for ChatGPT – DeepLearning.AI</li>
+          <li>AI for Everyone – Andrew Ng</li>
           <li>LangChain Bootcamp – Build LLM Apps with Python</li>
         </ul>
       </div>
 
       <div class="section-card">
         <h2 class="section-title">Contact</h2>
-        <p>Let’s collaborate! Reach out via <a href="mailto:donnareillycopy601@gmail.com">donnareillycopy601@gmail.com</a> or connect on <a href="https://github.com/yourhandle">GitHub</a> and <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>.</p>
+        <p>Let’s collaborate! Reach out via <a href="mailto:youremail@example.com">youremail@example.com</a> or connect on <a href="https://github.com/yourhandle">GitHub</a> and <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>.</p>
       </div>
     </div>
   </div>
